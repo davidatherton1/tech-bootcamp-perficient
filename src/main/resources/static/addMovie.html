@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+    <div id="topNav">
+        <a href="index.html">Home</a>
+        <a href="addStudio.html">Add Studio</a>
+        <a href="addMovie.html">Add Movie</a>
+    </div>
+    <div>
+        <h1>Add Movie</h1>
+        <form action="/" id="addMovie">
+            <div>
+                <input type="text" id="movieName" name="movieName" placeholder="Movie Name">
+            </div>
+            <div>
+                <input type="text" id="releaseYear" name="releaseYear" placeholder="Release Year">
+            </div>
+            <div>
+                <input type="text" id="director" name="director" placeholder="Director">
+            </div>
+            <div>
+                <select id="movieStudio" name="movieStudio">
+                </select>
+            </div>
+            <div>
+                <!--                    <input type="submit" value="Submit">-->
+                <button onclick="addMovie()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
